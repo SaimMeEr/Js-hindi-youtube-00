@@ -40,3 +40,18 @@ const regularUser = {
   console.log(tinderUser.hasOwnProperty("IsLoggedIn"))
   console.log(tinderUser.hasOwnProperty("IsLogged"))  
   
+
+ // ******************De-structuring******************
+
+ const course = {
+  courseName: "js-in hindi",
+  coursePrice:99,
+  courseInstructor:"Sameer"
+}
+// course.courseInstructor
+
+const {courseInstructor} = course
+// console.log(courseInstructor)  //=> syntical sugar
+
+console.log(instructor)
+const {courseInstructor:instructor} = course //=>we can also change the values by the help of de_structuring
