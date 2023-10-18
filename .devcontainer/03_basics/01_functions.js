@@ -22,3 +22,33 @@ function addTwoNumbers(number1,number2){
   }
   // console.log(loginUserMessage("sam"))
   console.log(loginUserMessage())
+
+
+
+  //*******More about Functions*********
+
+  
+function calculateCartPrice(val1,val2,...num1){
+  return num1
+}
+// console.log(calculateCartPrice(100,300,400))
+
+const user ={
+  username:"sam",
+  price:199,
+}
+
+function handleobject(anyobject){
+  console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+handleobject(user) //this is how we run the object using function and return the value
+
+
+//***how to run array through a function***
+const newArray = [100,200,300,600]
+
+function returnSecondValue(getArray){
+  return getArray[1]
+}
+console.log(returnSecondValue(newArray))
